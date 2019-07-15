@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:5432/travel_db
+    username: travel_user
+    password: void
+    
+  jpa:    show-sql: true
+    hibernate:
+      ddl-auto: none 
+    properties:
+      hibernate:
+        temp:
+          use_jdbc_metadata_defaults: false
+        jdbc:
+          lob:
+            non_contextual_creation: true
+                   
+    
